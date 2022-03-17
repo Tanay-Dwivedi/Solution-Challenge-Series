@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Solution Challenge series app</string>
+    <string name="forget_password"><u>forgot Password?</u></string>
+    <string name="signup_with">SignUp with</string>
+    <string name="new_user">New User? <b>Register</b></string>
+    <string name="email">Email address</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="signup">SignUp</string>
+    <string name="fullName">Full Name</string>
+    <string name="Age">Age</string>
+</resources>

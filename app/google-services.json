@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "812340204248",
+    "project_id": "solution-challenge-series",
+    "storage_bucket": "solution-challenge-series.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812340204248:android:39165a5a8194e9ad897dad",
+        "android_client_info": {
+          "package_name": "com.food.solutionchallengeseriesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812340204248-b1djem1dhho4udrn0lnolbdh4k295ugm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsWnnU8oYxJ2vBXvKswPpXRNU7exXzoR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812340204248-b1djem1dhho4udrn0lnolbdh4k295ugm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

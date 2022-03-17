@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".LoginScreen">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="#FFC900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/login_background_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="25dp"
+        android:alpha="0.5"
+        android:backgroundTint="#FFFDDE"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/emailCard"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/email_animation">
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/passwordCard"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/emailCard">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/password_animation">
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginBtnCard"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:layout_margin="35dp"
+        android:backgroundTint="#FFE480"
+        app:cardCornerRadius="1000dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCard">
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_margin="40dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="@string/signup_with"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/patrick_hand_regular"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtnCard" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginWithGoogleBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/google_animation">
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginWithFacebookBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/facebook_animation">
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginWithGitHubBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/github_animation">
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/newUserRegister"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/new_user"
+        android:textAlignment="center"
+        android:textColor="#318CE7"
+        android:textSize="18sp"
+        android:fontFamily="@font/patrick_hand_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/emailLgnView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="15dp"
+        android:hint="@string/email"
+        android:textColorHint="#40000000"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:fontFamily="@font/syne_mono_regular"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/emailCard"
+        app:layout_constraintEnd_toEndOf="@+id/emailCard"
+        app:layout_constraintStart_toStartOf="@+id/emailCard"
+        app:layout_constraintTop_toTopOf="@+id/emailCard" />
+
+    <EditText
+        android:id="@+id/passwordLgnView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autofillHints="password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:elevation="15dp"
+        android:hint="@string/password"
+        android:textColorHint="#40000000"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:fontFamily="@font/syne_mono_regular"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordCard"
+        app:layout_constraintEnd_toEndOf="@+id/passwordCard"
+        app:layout_constraintStart_toStartOf="@+id/passwordCard"
+        app:layout_constraintTop_toTopOf="@+id/passwordCard" />
+
+    <TextView
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="15dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/spectra_bold_italic"
+        app:layout_constraintBottom_toBottomOf="@+id/loginBtnCard"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtnCard"
+        app:layout_constraintStart_toStartOf="@+id/loginBtnCard"
+        app:layout_constraintTop_toTopOf="@+id/loginBtnCard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
